@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+        body{
+            background-color: #D9CDF7;
+        }
+        body * {
+            font-family: 'Lato', sans-serif;
+        }
+        main {
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+        .card {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            height: 300px;
+            width: 900px;
+        }
+
+        .produto-imagem #imagem{
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            top: 8px;
+            left: 500px;
+            top: 300px;
+        }
+        .produto-imagem #imagem:hover {
+            opacity: 0;
+        }
+        .produto-imagem #gif{
+            left: 1000px;
+        }
+        .produto-info{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+            padding: 0px;
+            gap: 30px;
+            width: 400px;
+            height: 300px;
+            top: 8px;
+        }
+        .produto-info h1 {
+            color: #271A45;
+            font-family: 'Crimson Pro';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            width: 344px;
+            height: 32px;
+            
+            gap: 20px;
+        }
+        button{
+            background-color: #D9CDF7;
+            font-family: 'Lato';
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 16px;
+            gap: 8px;
+            width: 178px;
+            height: 32px;
+            border: 2px solid #271A45;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>    
+    <main>
+      <section class="card">
+        <div class="gifgr">
+          <img id="gif1" src="https://bora-codar-desafio-02-card-produto.vercel.app/assets/img/animated-sofa.gif" width="500px" height="300px"></div>
+        <div class="produto-imagem">        
+          <img id="imagem" src="https://bora-codar-desafio-02-card-produto.vercel.app/assets/img/image-sofa.png" alt="Sofá Margot II - Rosé">
+        </div>
+
+        <div class="produto-info">
+          <div class="info">
+            <span>CÓDIGO: 42404</span><br>
+            <h1>Sofá Margot II - Rosé</h1><br>
+            <p>R$ 4.000</p>
+          </div>
+          <button>ADICIONAR À CESTA</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  
+
+</body>
